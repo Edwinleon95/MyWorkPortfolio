@@ -6,8 +6,6 @@ const grid = new Muuri('.grid', {
 
 
 window.addEventListener('load', () => {
-    // grid.filter(`[data-categoria="contact"]`)
-    // document.getElementById('grid').style.display = 'block';
     grid.refreshItems().layout();
     document.getElementById('grid').classList.add('imagenes-cargadas');
 
@@ -26,7 +24,7 @@ window.addEventListener('load', () => {
 
     document.querySelector('#barra-busqueda').addEventListener('input',(evento) => {
         const busqueda = evento.target.value;
-        grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda));
+        grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda)) 
     });
 
 

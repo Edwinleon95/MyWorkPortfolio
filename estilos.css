@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f3f3f3;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 a {
@@ -43,13 +43,23 @@ header .barra-busqueda{
     height: 40px;
     line-height: 40px;
     background: #fff;
-    padding: 0 70px;
+    padding: 0 10px;
     border-radius: 100px;
     border: none;
     text-align: center;
     font-size: 16px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .15);
 }
 
+header .barra-busqueda::placeholder{
+    background-image: url('./Images/search.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: left;
+}
+header .barra-busqueda:focus{
+    outline: none;
+}
 header .categorias{
     display: flex;
     justify-content: center;
@@ -57,7 +67,7 @@ header .categorias{
 }
 
 header .categorias a{
-    color: #9b9b9b;
+    color: #fff;
     margin: 10px 20px;
     font-size: 18px;
     font-weight: 700;
@@ -71,12 +81,12 @@ header .categorias a.activo {
 /* Main */
 /* ----------------- */
 
-
 .grid {
     position: relative;
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s linear 1s;
+    margin-bottom: 32px;
 }
 
 .grid.imagenes-cargadas{
@@ -88,6 +98,8 @@ header .categorias a.activo {
     padding: 0;
     margin: 10px;
     width: calc(33.3333% - 20px);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .15);
+    border-radius: 10px;
 }
 
 @media (max-width:640px){
@@ -104,6 +116,7 @@ header .categorias a.activo {
     width: 100%;
     cursor: pointer;
     vertical-align: top;
+    border-radius:10px;
 }
 
 
@@ -159,4 +172,36 @@ header .categorias a.activo {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:640px){
+    .contenedor-img {
+        position: relative;
+        max-width: 70%;
+    }
+}
+/* ----------------- */
+/* Footer */
+/* ----------------- */
+
+footer{
+    padding: 24px;
+    background-color: #fff;
+    width: 100%;
+}
+.redes-sociales{
+    width: 100%;
+    text-align: center;
+}
+.linkedin img{
+    width: 35px;
+    margin: 5px;
+}
+.github img{
+    width: 35px;
+    margin: 5px;
+}
+
+.creado-por{
+    text-align: center;
 }
