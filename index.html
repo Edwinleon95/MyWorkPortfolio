@@ -6,234 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Mi portafolio - Edwin Leon</title>
+    <title>Portafolio dinamico</title>
 </head>
 
 <body>
 
     <div class="contenedor">
         <header>
+            <div class="logo">
+                <h1>Portafolio dinamico</h1>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar...">
+            </form>
             <div class="categorias" id="categorias">
-                <a href="#">Contact</a>
-                <a href="#" class="activo">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Proyects</a>
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
             </div>
         </header>
 
-        <section class="grid" id="grid">
-            <div class="item-about" data-categoria="about">
+
+        <main class="grid" id="grid">
+            <div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles"
+                data-descripcion="1.-lorem ipsasdsahsabd">
                 <div class="item-contenido">
-                    <div class="intermedio">
-                        <div class="mydescription">
-                            <h1>Edwin Leon</h1>
-                            <p>Full Stack Developer</p>
-                            <p>Durante mis prácticas en Gidahatari trabajé en modelamientos numéricos que formaron parte
-                                de proyectos importantes para clientes como Petroperú, así como en trabajo de
-                                investigación acerca de diversos temas relacionados a la gestión del agua. Además
-                                trabajé en equipo empleando mi habilidad de comunicación, desarrollando y manteniendo
-                                buenas relaciones laborales con mis compañeros de trabajo.</p>
-                            <p>Durante mis prácticas en Gidahatari trabajé en modelamientos numéricos que formaron parte
-                                de proyectos importantes para clientes como Petroperú, así como en trabajo de
-                                investigación acerca de diversos temas relacionados a la gestión del agua. Además
-                                trabajé en equipo empleando mi habilidad de comunicación, desarrollando y manteniendo
-                                buenas relaciones laborales con mis compañeros de trabajo.</p>
-                            <a href="./Images/Edwin Leon.pdf" download class="download" target="_blank">
-                                <p>
-                                    Descargar Cv
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                                    <path
-                                        d="M24 32.35 14.35 22.7 16.5 20.55 22.5 26.55V8H25.5V26.55L31.5 20.55L33.65 22.7ZM11 40Q9.8 40 8.9 39.1Q8 38.2 8 37V29.85H11V37Q11 37 11 37Q11 37 11 37H37Q37 37 37 37Q37 37 37 37V29.85H40V37Q40 38.2 39.1 39.1Q38.2 40 37 40Z" />
-                                </svg>
-                            </a>
-
-                        </div>
-                        <div class="contenedor-imagen">
-                            <img src="./Images/imagen con fondo.png" alt="yo">
-                        </div>
-                    </div>
+                    <img src="./Images/ciudad1.png" alt="ciudad">
                 </div>
             </div>
 
-            <!-- <div>Skilss</div> -->
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/logoJs.png" alt="JavaScript" class="logos-programacion">
-                    <div class="capa">
-                        <h3>JavaScript</h3>
-                        <p>Es un lenguaje formal que brinda instrucciones a una computadora (ordenador) para generar
-                            ciertos datos. Se utiliza sobre todo para producir recursos interactivos en una página web.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/HTML.png" alt="html" class="logos-programacion">
-                    <div class="capa">
-                        <h3>HTML</h3>
-                        <p>Es el lenguaje de marcado que usamos para estructurar y dar significado a nuestro contenido
-                            web, por ejemplo, definiendo párrafos, encabezados y tablas de datos, o insertando imágenes
-                            y videos en la página.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/Css.png" alt="Css" class="logos-programacion">
-                    <div class="capa">
-                        <h3>CSS</h3>
-                        <p>Es un lenguaje de reglas de estilo que usamos para aplicar estilo a nuestro contenido
-                            HTML, por ejemplo, establecer colores de fondo y tipos de letra, y distribuir nuestro
-                            contenido en múltiples columnas.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/NODEJS-API-REST-EXPRESS.jpg" alt="nodeJs" class="logos-programacion">
-                    <div class="capa">
-                        <h3>NodeJs</h3>
-                        <p>Es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, que
-                            permite a los desarrolladores crear toda clase de herramientas de lado servidor y
-                            aplicaciones en JavaScript.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/React.png" alt="React" class="logos-programacion">
-                    <div class="capa">
-                        <h3>ReactJs</h3>
-                        <p>Es una librería open source de JavaScript para desarrollar interfaces de usuario de forma
-                            sencilla. Diseña vistas simples para cada estado en tu aplicación, y React se encargará de
-                            actualizar y renderizar de manera eficiente los componentes correctos cuando los datos
-                            cambien.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/Redux.jpg" alt="Redux" class="logos-programacion">
-                    <div class="capa">
-                        <h3>Redux</h3>
-                        <p>
-                            Es un contenedor predecible del estado de aplicaciones JavaScript.
-                            Redux es una excelente herramienta para manejar el estado de una aplicación, que nos permite
-                            manejar estado global e innmutable mayor control del estado de la aplicación y el flujo de
-                            datos y arquitectura escalable de datos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/postgresql.jpg" alt="postgresql" class="logos-programacion">
-                    <div class="capa">
-                        <h3>PostgreSQL</h3>
-                        <p>Es un sistema de código abierto de administración de bases de datos del tipo relacional,
-                            aunque también es posible ejecutar consultas que sean no relaciones. En este sistema, las
-                            consultas relacionales se basan en SQL, mientras que las no relacionales hacen uso de JSON.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/Sequelize.jpg" alt="Sequelize" class="logos-programacion">
-                    <div class="capa">
-                        <h3>Sequelize</h3>
-                        <p>Es un ORM para Nodejs que nos permite manipular varias bases de datos SQL de una
-                            manera bastante sencilla, entre estas bases de datos podemos encontrar: mysql, sqlite,
-                            postgres, mssql.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item skills" data-categoria="skills">
-                <div class="item-contenido skills">
-                    <img src="./Images/MonogoDb.png" alt="Express" class="logos-programacion">
-                    <div class="capa">
-                        <h3>MongoDB</h3>
-                        <p>Es una base de datos orientada a documentos. Esto quiere decir que en lugar de
-                            guardar los datos en registros, guarda los datos en documentos. Estos documentos son
-                            almacenados en BSON, que es una representación binaria de JSON. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- <div>Skilss</div> -->
-
-            <div class="item" data-categoria="proyects">
+            <div class="item" data-categoria="personas" data-etiquetas="personas mujer"
+                data-descripcion="1.-lorem ipsasdsahsabd">
                 <div class="item-contenido">
-                    <p>aqui van los proyectos</p>
+                    <img src="./Images/persona1.png" alt="mujer">
                 </div>
             </div>
 
-            <div class="item-contact" data-categoria="contact">
-                <div class="item-contenido contact">
-                    <div class="mensajes">
-                        <h1>Escribeme</h1>
-                        <form action="https://formsubmit.co/EdwinM.LeonB@gmail.com" method="POST">
-                            <label for="">Nombre</label>
-                            <input type="text" name="name" required>
-                            <label for="">Email</label>
-                            <input type="email" name="email" required>
-                            <label for="">Asunto</label>
-                            <input type="text" name="asunto" required>
-                            <label for="mensaje">Mensaje</label>
-                            <input type="text" name="mensaje" required id="mensaje">
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-
+            <div class="item" data-categoria="naturaleza" data-etiquetas="montañas paisajes"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/paisaje1.png" alt="montañas">
                 </div>
             </div>
 
+            <div class="item" data-categoria="animales" data-etiquetas="leon animales felinos"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/animal1.png" alt="leon">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="animales" data-etiquetas="oso animales"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/animal2.png" alt="oso">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="personas" data-etiquetas="personas mujer"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/persona2.png" alt="mujer">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="naturaleza" data-etiquetas="paisajes montañas"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/paisaje2.png" alt="paisaje">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="ciudades" data-etiquetas="ciudades edificios"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/ciudad2.png" alt="ciudad">
+                </div>
+            </div>
+
+            <div class="item" data-categoria="naturaleza" data-etiquetas="naturaleza hojas"
+                data-descripcion="1.-lorem ipsasdsahsabd">
+                <div class="item-contenido">
+                    <img src="./Images/naturaleza1.png" alt="naturaleza">
+                </div>
+            </div>
+        </main>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24 12C24 15.1826 22.7357 18.2348 20.4853 20.4853C18.2348 22.7357 15.1826 24 12 24C8.8174 24 5.76516 22.7357 3.51472 20.4853C1.26428 18.2348 0 15.1826 0 12C0 8.8174 1.26428 5.76516 3.51472 3.51472C5.76516 1.26428 8.8174 0 12 0C15.1826 0 18.2348 1.26428 20.4853 3.51472C22.7357 5.76516 24 8.8174 24 12ZM8.031 6.969C7.89017 6.82817 7.69916 6.74905 7.5 6.74905C7.30084 6.74905 7.10983 6.82817 6.969 6.969C6.82817 7.10983 6.74905 7.30084 6.74905 7.5C6.74905 7.69916 6.82817 7.89017 6.969 8.031L10.9395 12L6.969 15.969C6.89927 16.0387 6.84395 16.1215 6.80621 16.2126C6.76848 16.3037 6.74905 16.4014 6.74905 16.5C6.74905 16.5986 6.76848 16.6963 6.80621 16.7874C6.84395 16.8785 6.89927 16.9613 6.969 17.031C7.10983 17.1718 7.30084 17.2509 7.5 17.2509C7.59862 17.2509 7.69627 17.2315 7.78738 17.1938C7.87848 17.156 7.96127 17.1007 8.031 17.031L12 13.0605L15.969 17.031C16.0387 17.1007 16.1215 17.156 16.2126 17.1938C16.3037 17.2315 16.4014 17.2509 16.5 17.2509C16.5986 17.2509 16.6963 17.2315 16.7874 17.1938C16.8785 17.156 16.9613 17.1007 17.031 17.031C17.1007 16.9613 17.156 16.8785 17.1938 16.7874C17.2315 16.6963 17.2509 16.5986 17.2509 16.5C17.2509 16.4014 17.2315 16.3037 17.1938 16.2126C17.156 16.1215 17.1007 16.0387 17.031 15.969L13.0605 12L17.031 8.031C17.1007 7.96127 17.156 7.87848 17.1938 7.78738C17.2315 7.69627 17.2509 7.59862 17.2509 7.5C17.2509 7.40138 17.2315 7.30373 17.1938 7.21262C17.156 7.12152 17.1007 7.03873 17.031 6.969C16.9613 6.89927 16.8785 6.84395 16.7874 6.80621C16.6963 6.76848 16.5986 6.74905 16.5 6.74905C16.4014 6.74905 16.3037 6.76848 16.2126 6.80621C16.1215 6.84395 16.0387 6.89927 15.969 6.969L12 10.9395L8.031 6.969Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <img src="" alt="...">
+            </div>
+            <p class="descripcion"></p>
         </section>
 
-        <!-- <section class="overlay activo" id="overlay">
-            <div class="contenedor-texto">
-                <button>x</button>
-                <p>
-                    JavaScript es un leguaje de programacion basado en objetos el cual los najdklsah jsdhk
-                </p>
-            </div>
-        </section> -->
         <footer class="contenedor">
             <div class="redes-sociales">
-                <div class="contenedor-icono">
-                    <a href="https://www.linkedin.com/in/edwin-leon-81988a13b/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                            <path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z" />
-                            <path fill="#fff"
-                                d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="https://github.com/Edwinleon95" target="_blank">
-                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64px"
-                            height="64px">
-                            <path
-                                d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z" />
-                        </svg>
-                    </a>
-                </div>
+                <a href="https://www.linkedin.com/in/edwin-leon-81988a13b/" target="_blank" class="linkedin"></a>
+                <a href="https://github.com/Edwinleon95" target="_blank" class="github"></a>
             </div>
-            <p><b> Edwin Leon</b>Full Stack Developer</p>
+            <div class="creado-por"></div>
         </footer>
     </div>
     <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-    <script src="./miPortafolio.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
